@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chrome Browser Dashboard Clone</title>
+    <link rel="stylesheet" href="assert/style/style.css">
+    <script src="assert/logic/script.js" defer></script>
+    <link rel="icon" type="image/x-icon" href="assert/img/tab_icon.png">
+</head>
+<body>
+    <div id="loader">Loading... </div>
+    <div class="dashboard-container" id="gridContainer">
+        <div class="shortcut-tile" id="addBtnTile">
+            <div class="icon-container">
+                <span class="plus-icon">+</span>
+            </div>
+            <div class="tile-title">Add shortcut</div>
+        </div>
+    </div>
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal-box">
+            <div class="modal-title" id="modalTitle">Edit shortcut</div>
+            <form id="shortcutForm">
+                <div class="input-label">Name</div>
+                <input type="text" id="webName" class="input-field" required autocomplete="off">
+                
+                <div class="input-label">URL</div>
+                <input type="text" id="webUrl" class="input-field" required autocomplete="off">
+                
+                <div class="modal-actions">
+                    <button type="button" class="chrome-btn" id="closeModalBtn">Cancel</button>
+                    <button type="submit" class="chrome-btn primary" id="saveBtn">Done</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
